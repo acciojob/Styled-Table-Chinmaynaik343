@@ -2,14 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Global Renewable Energy Statistics</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .table-container {
+            width: 85%;
+            max-width: 900px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        thead {
+            background-color: #27ae60;
+            color: #ffffff;
+        }
+
+        th, td {
+            padding: 14px 18px;
+        }
+
+        th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.2s ease;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f9fcfa;
+        }
+
+        tbody tr:hover {
+            background-color: #e8f5e9;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #27ae60;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+<div class="table-container">
+    <h2>Global Renewable Energy Statistics (2024–2026)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Energy Source</th>
+                <th>Global Capacity (GW)</th>
+                <th>Annual Growth Rate</th>
+                <th>Primary Contributor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Solar Photovoltaic</td>
+                <td>1,650 GW</td>
+                <td class="highlight">+28.5%</td>
+                <td>Asia-Pacific</td>
+            </tr>
+            <tr>
+                <td>Wind Power (Onshore & Offshore)</td>
+                <td>1,020 GW</td>
+                <td class="highlight">+14.2%</td>
+                <td>North America & Europe</td>
+            </tr>
+            <tr>
+                <td>Hydropower</td>
+                <td>1,260 GW</td>
+                <td class="highlight">+2.1%</td>
+                <td>Latin America</td>
+            </tr>
+            <tr>
+                <td>Green Hydrogen</td>
+                <td>45 GW</td>
+                <td class="highlight">+65.0%</td>
+                <td>Middle East & Europe</td>
+            </tr>
+            <tr>
+                <td>Geothermal & Biomass</td>
+                <td>160 GW</td>
+                <td class="highlight">+4.8%</td>
+                <td>East Africa & Southeast Asia</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 </body>
 </html>
